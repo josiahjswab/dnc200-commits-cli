@@ -9,8 +9,8 @@ namespace dnc200_commits_cliTest
         [Fact]
         public void GetCommits_User()
         {
-            string userName = "";
-            int expectedCommits = 0;
+            string userName = "josiahjswab";
+            int expectedCommits = 9;
             int actualCommits = Program.GetCommits(userName);
             Assert.Equal(expectedCommits, actualCommits);
         }
@@ -18,9 +18,9 @@ namespace dnc200_commits_cliTest
         [Fact]
         public void GetCommits_Repo()
         {
-            string repoName = "";
-            string userName = "";
-            int expectedCommits = 0;
+            string repoName = "dnc200-change-calculator";
+            string userName = "josiahjswab";
+            int expectedCommits = 1;
             int actualCommits = Program.GetCommits(userName, repoName);
             Assert.Equal(expectedCommits, actualCommits);
         }
